@@ -1,8 +1,9 @@
 //Reverse words in their original positions
 #include<stdio.h>
+#include<string.h>
 int main()
 {
- char a[50];int i,j,k;
+ char a[50];int i,j,k,c;
  scanf("%[^\n]s",a);
  for(i=strlen(a);i>0;i--)
  a[i]=a[i-1];
@@ -13,6 +14,18 @@ int main()
  {
   if(a[i]==' ')
   {
+   j=i;
+   c=0;
+   while(a[j++]==' ')
+   c++;
+   if(c>1)
+   {
+    while(--c)
+    {
+    printf(" ");
+    i++;
+    }   
+   }
    if(a[i+1]=='\0')
    return 0;
    for(j=i+1; a[j]!=' ';j++);
@@ -22,3 +35,4 @@ int main()
  }
  return 0;
 }
+
