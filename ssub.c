@@ -4,7 +4,7 @@ void main()
 {
  char a[50];int i,j,k,l;
  printf("Enter a string : ");
- scanf("%[^\n]s",a);
+ scanf("%[^\n]s",a); // good way to use a delimiter
  printf("Enter the length of the substring and the index from where it is to be extracted : ");
  scanf("%i %i",&l,&i);
  printf("The substring is : ");
