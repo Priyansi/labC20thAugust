@@ -1,3 +1,5 @@
+//WAP to extract substring when starting and ending index is given
+
 #include<stdio.h>
 void main()
 {
